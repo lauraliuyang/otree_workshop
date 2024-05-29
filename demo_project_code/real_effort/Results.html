@@ -1,0 +1,11 @@
+{{ block title }}
+    Result
+{{ endblock }}
+
+{{ block content }}
+You have entered {{ player.number_entered }}, the correct answer is {{ player.sum_of_numbers }}. <br />
+Your payoff is {{ player.payoff }}
+    {{ next_button }}
+{{ endblock }}
+
+

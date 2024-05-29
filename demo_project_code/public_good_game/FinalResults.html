@@ -1,0 +1,18 @@
+{{ block title }}
+    Result
+{{ endblock }}
+
+{{ block content }}
+<!--Your payoff round 1 is {{ earning_list.0 }} <br />-->
+<!--Your payoff round 2 is {{ earning_list.1 }} <br />-->
+<!--Your payoff round 3 is {{ earning_list.2 }} <br />-->
+
+{{ for earning in earning_list }}
+Your payoff round {{ earning.0 }} is {{ earning.1 }} <br />
+{{ endfor }}
+
+Round {{ subsession.random_payoff_round }} is chosen for payment, your earnings in this round is {{ random_round_earnings }}.
+    {{ next_button }}
+{{ endblock }}
+
+
